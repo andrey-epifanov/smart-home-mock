@@ -2,10 +2,13 @@ package hello;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.stereotype.Component;
+
 
 import java.util.ArrayList;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Component
 public class Counter {
 
     @JsonProperty("Spisok")
